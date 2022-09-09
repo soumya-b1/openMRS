@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>UndustrosAssessment</groupId>
+	<artifactId>OpenMrs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.6.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.4.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-cucumber-jvm</artifactId>
+			<version>2.19.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>7.6.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			</plugin>
+			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
+			</plugin>
+
+
+			<!-- https://mvnrepository.com/artifact/com.trivago.rta/cluecumber-report-plugin -->
+			<plugin>
+				<groupId>com.trivago.rta</groupId>
+				<artifactId>cluecumber-report-plugin</artifactId>
+				<version>2.8.0</version>
+				<executions>
+					<execution>
+						<id>report</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>reporting</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<customPageTitle>GMO Cluecumber Report</customPageTitle>
+					<sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>
+					<generatedHtmlReportDirectory>${project.build.directory}/cluecumber-report</generatedHtmlReportDirectory>
+					<!-- After execution from pom.xml, goto project folder in command prompt 
+						and type 'mvn cluecumber-report:reporting', then under folder target, report 
+						folder by name specified in Line 85 above will be created, open index.html 
+						to view the report -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

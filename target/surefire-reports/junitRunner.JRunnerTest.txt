@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: junitRunner.JRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 91.365 s <<< FAILURE! - in junitRunner.JRunnerTest
+Scenarios for open MRS application.Book an Appointment for the patient  Time elapsed: 0.153 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I Click on Schedule Appointment' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I Click on Schedule Appointment")
+public void i_click_on_schedule_appointment() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Manage Appointments Page must be displayed")
+public void manage_appointments_page_must_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Scenarios for open MRS application.Add the attachment  Time elapsed: 5.362 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[placeholder='Enter a note'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:3714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3714/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3435e11f117c37bb0d4dc6ae161a1396
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at stepDef.openMrsStep.i_type_for_the_attachment(openMrsStep.java:413)
+	at ✽.I type for the attachment(classpath:Feature//openMRS.feature:107)
+
+Scenarios for open MRS application.Delete a Patient  Time elapsed: 16.681 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='dataTables_empty']/tbody/tr/td (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:3714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3714/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3435e11f117c37bb0d4dc6ae161a1396
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at stepDef.openMrsStep.patient_must_be_deleted_successfully(openMrsStep.java:461)
+	at ✽.Patient must be Deleted Successfully(classpath:Feature//openMRS.feature:115)
+
+Scenarios for open MRS application.Logout of the application  Time elapsed: 5.08 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"span[class='PersonName-givenName']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3435e11f117c37bb0d4dc6ae161a1396, findElement {using=css selector, value=span[class='PersonName-givenName']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:3714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3714/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3435e11f117c37bb0d4dc6ae161a1396
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at stepDef.openMrsStep.i_am_on_home_page(openMrsStep.java:284)
+	at ✽.I am on Home Page(classpath:Feature//openMRS.feature:119)
+
