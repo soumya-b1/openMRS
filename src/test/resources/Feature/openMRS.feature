@@ -116,7 +116,6 @@ Scenario: Delete a Patient
 
 @Logout	
 Scenario: Logout of the application
-	Given I am on Home Page
 	When I click on Logout
 	Then I should be logged out of the application successfully
 

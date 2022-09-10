@@ -3,15 +3,15 @@ package stepDef;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.testng.Assert;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
@@ -49,7 +49,7 @@ public class openMrsStep {
 	@Given("I am on MRS Login Page")
 	public void i_am_on_mrs_login_page() {
 		pageTitle = driver.getTitle();
-		Assert.assertEquals("Login Successful","Login", pageTitle);
+		Assert.assertEquals(pageTitle,"Login","Login Successful");
 	}
 
 	@When("I enter {string} and {string} for username and Password")
@@ -73,7 +73,7 @@ public class openMrsStep {
 	@Then("Login should be successful")
 	public void login_should_be_successful() {
 		pageTitle = driver.getTitle();
-		Assert.assertEquals("Home", pageTitle);
+		Assert.assertEquals(pageTitle,"Home");
 	}
 
 	// -------------------------------------
@@ -83,7 +83,7 @@ public class openMrsStep {
 	@Given("I am on MRS Home Page")
 	public void i_am_on_mrs_home_page() {
 		pageTitle = driver.getTitle();
-		Assert.assertEquals("Home", pageTitle);
+		Assert.assertEquals(pageTitle,"Home");
 	}
 
 	@When("I click on Register for a patient")
@@ -96,7 +96,7 @@ public class openMrsStep {
 	@Then("Register Patient Page must be displayed")
 	public void register_patient_page_must_be_displayed() {
 		pageTitle = driver.getTitle();
-		Assert.assertEquals("OpenMRS Electronic Medical Record", pageTitle);
+		Assert.assertEquals(pageTitle,"OpenMRS Electronic Medical Record");
 	}
 
 	// ---------------------------------------------
@@ -106,7 +106,7 @@ public class openMrsStep {
 	@Given("I am on Register a patient Page")
 	public void i_am_on_register_a_patient_page() {
 		pageTitle = driver.getTitle();
-		Assert.assertEquals("OpenMRS Electronic Medical Record", pageTitle);
+		Assert.assertEquals(pageTitle,"OpenMRS Electronic Medical Record");
 	}
 
 	@When("I give the patients name")
@@ -127,7 +127,7 @@ public class openMrsStep {
 	public void gender_screen_must_be_displayed() {
 		we = driver.findElement(By.cssSelector("span[id='genderLabel']"));
 		val = we.getText();
-		Assert.assertEquals("Gender", val);
+		Assert.assertEquals(val,"Gender");
 	}
 
 	// -----------------------------------------
@@ -138,7 +138,7 @@ public class openMrsStep {
 	public void i_am_on_gender_screen() {
 		we = driver.findElement(By.cssSelector("span[id='genderLabel']"));
 		val = we.getText();
-		Assert.assertEquals("Gender", val);
+		Assert.assertEquals(val,"Gender");
 
 	}
 
@@ -153,7 +153,7 @@ public class openMrsStep {
 	public void birthdate_screen_must_be_displayed() {
 		we = driver.findElement(By.cssSelector("span[id='birthdateLabel']"));
 		val = we.getText();
-		Assert.assertEquals("Birthdate", val);
+		Assert.assertEquals(val,"Birthdate");
 	}
 
 	// ---------------------------------------------
@@ -164,7 +164,7 @@ public class openMrsStep {
 	public void i_am_on_birth_date_screen() {
 		we = driver.findElement(By.cssSelector("span[id='birthdateLabel']"));
 		val = we.getText();
-		Assert.assertEquals("Birthdate", val);
+		Assert.assertEquals(val,"Birthdate");
 	}
 
 	@When("I give the Birth date")
@@ -180,7 +180,7 @@ public class openMrsStep {
 	public void address_screen_must_be_displayed() {
 		we = driver.findElement(By.cssSelector("li[class='question-legend focused']"));
 		val = we.getText();
-		Assert.assertEquals("Address", val);
+		Assert.assertEquals(val, "Address");
 
 	}
 
@@ -190,10 +190,9 @@ public class openMrsStep {
 
 	@Given("I am on Address Screen")
 	public void i_am_on_address_screen() {
-		// we = driver.findElement(By.cssSelector("li[class='question-legend done']"));
 		we = driver.findElement(By.xpath("//*[@id='formBreadcrumb']/li[2]/ul/li[1]"));
 		val = we.getText();
-		Assert.assertEquals("Address", val);
+		Assert.assertEquals(val,"Address");
 
 	}
 
@@ -211,7 +210,7 @@ public class openMrsStep {
 	public void phone_number_screen_must_be_displayed() {
 		we = driver.findElement(By.xpath("//*[@id='formBreadcrumb']/li[2]/ul/li[2]"));
 		val = we.getText();
-		Assert.assertEquals("Phone Number", val);
+		Assert.assertEquals(val, "Phone Number");
 
 	}
 
@@ -223,7 +222,7 @@ public class openMrsStep {
 	public void i_am_on_phone_number_screen() {
 		we = driver.findElement(By.xpath("//*[@id='formBreadcrumb']/li[2]/ul/li[2]"));
 		val = we.getText();
-		Assert.assertEquals("Phone Number", val);
+		Assert.assertEquals(val, "Phone Number");
 
 	}
 
@@ -238,7 +237,7 @@ public class openMrsStep {
 	public void relatives_screen_must_be_displayed() {
 		we = driver.findElement(By.xpath("//*[@id='formBreadcrumb']/li[3]/ul/li"));
 		val = we.getText();
-		Assert.assertEquals("Relatives", val);
+		Assert.assertEquals(val,"Relatives");
 	}
 
 	// -----------------------------------------
@@ -249,7 +248,7 @@ public class openMrsStep {
 	public void i_am_on_relatives_screen() {
 		we = driver.findElement(By.xpath("//*[@id='formBreadcrumb']/li[3]/ul/li"));
 		val = we.getText();
-		Assert.assertEquals("Relatives", val);
+		Assert.assertEquals(val, "Relatives");
 	}
 
 	@When("I give the Relatives info")
@@ -271,7 +270,7 @@ public class openMrsStep {
 	public void patients_dashboard_page_must_be_displayed() {
 		we = driver.findElement(By.cssSelector("span[class='PersonName-givenName']"));
 		val = we.getText();
-		Assert.assertEquals("Anonymous", val);
+		Assert.assertEquals(val,"Anonymous");
 
 	}
 
@@ -283,7 +282,7 @@ public class openMrsStep {
 	public void i_am_on_home_page() {
 		we = driver.findElement(By.cssSelector("span[class='PersonName-givenName']"));
 		val = we.getText();
-		Assert.assertEquals("Anonymous", val);
+		Assert.assertEquals(val,"Anonymous");
 		we2 = driver.findElement(By.cssSelector("a[href='/openmrs/index.htm']"));
 		we2.click();
 
@@ -300,7 +299,7 @@ public class openMrsStep {
 	public void find_patient_record_page_must_be_displayed() {
 		we = driver.findElement(By.xpath("/html/body/div/div[3]/h2"));
 		val = we.getText();
-		Assert.assertEquals("Find Patient Record", val);
+		Assert.assertEquals(val,"Find Patient Record");
 	}
 
 	// --------------------------------------------
@@ -311,7 +310,7 @@ public class openMrsStep {
 	public void i_am_on_find_patient_record_page() {
 		we = driver.findElement(By.xpath("/html/body/div/div[3]/h2"));
 		val = we.getText();
-		Assert.assertEquals("Find Patient Record", val);
+		Assert.assertEquals(val,"Find Patient Record");
 	}
 
 	@When("I Search by Name")
@@ -328,22 +327,22 @@ public class openMrsStep {
 		
 		WebElement we3 = driver.findElement(By.xpath("//*[@id='patient-search-results-table']/tbody/tr/td[3]"));
 		String val2 = we3.getText();
-		Assert.assertEquals("M", val2);
+		Assert.assertEquals(val2,"M");
 
 		WebElement we4 = driver.findElement(By.xpath("//*[@id='patient-search-results-table']/tbody/tr/td[4]"));
 		String val3 = we4.getText();
-		Assert.assertEquals("28", val3);
+		Assert.assertEquals(val3,"28");
 
 		WebElement we5 = driver.findElement(By.xpath("//*[@id='patient-search-results-table']/tbody/tr/td[5]"));
 		String val4 = we5.getText();
-		// Assert.assertEquals(" 12 Apr 1994", val4);
+		//Assert.assertEquals(val4," 12 Apr 1994");
 
 		
 		String element="/html/body/div/div[3]/div[2]/div/div/div/table/tbody/tr/td[2]";
 		new WebDriverWait(driver, Duration.ofSeconds(5)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(By.xpath(element)));
 		we2 =driver.findElement(By.xpath(element));
 		val = we2.getText();
-		Assert.assertEquals("Anonymous User", val);
+		Assert.assertEquals(val,"Anonymous User");
 		we2.click();
 	}
 
@@ -355,7 +354,7 @@ public class openMrsStep {
 	public void i_am_on_patients_dashboard_page() {
 		we = driver.findElement(By.cssSelector("span[class='PersonName-givenName']"));
 		val = we.getText();
-		Assert.assertEquals("Anonymous", val);
+		Assert.assertEquals(val,"Anonymous");
 
 	}
 
@@ -369,7 +368,8 @@ public class openMrsStep {
 	public void manage_appointments_page_must_be_displayed() {
 		we = driver.findElement(By.xpath("//*[@id='breadcrumbs']/li[3]"));
 		val = we.getText();
-		Assert.assertEquals("Manage Appointments", val);
+		//Assert.assertEquals(val,"Manage Appointments");
+		 
 	}*/
 
 	// --------------------------------------------------
@@ -387,7 +387,7 @@ public class openMrsStep {
 	  public void attachments_screen_must_be_displayed() {
 		  we = driver.findElement(By.xpath("//*[@id='breadcrumbs']/li[3]"));
 		  val = we.getText();
-		  Assert.assertEquals("Attachments", val);
+		  Assert.assertEquals(val,"Attachments");
 	  
 	  }
 	  
@@ -400,7 +400,7 @@ public class openMrsStep {
 	  public void i_am_on_attachments_page() {
 		  we = driver.findElement(By.xpath("//*[@id='breadcrumbs']/li[3]"));
 		  val = we.getText();
-		  Assert.assertEquals("Attachments", val);
+		  Assert.assertEquals(val,"Attachments");
 	  
 	  }
 	  
@@ -410,7 +410,7 @@ public class openMrsStep {
 		  we.click();
 		  
 		  
-		  new WebDriverWait(driver, Duration.ofSeconds(5)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(By.cssSelector("textarea[placeholder='Enter a note']")));
+		  new WebDriverWait(driver, Duration.ofSeconds(5)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeSelected(By.cssSelector("textarea[placeholder='Enter a note']")));
 		  we2=driver.findElement(By.cssSelector("textarea[placeholder='Enter a note']"));
 		  we2.sendKeys("OPD Patient");
 		  
@@ -422,7 +422,7 @@ public class openMrsStep {
 	  public void file_must_be_attached() {
 		  we=driver.findElement(By.xpath("//*[@id='TextField']/pre"));
 		  val=we.getText();
-		  Assert.assertEquals("OPD Patient", val);
+		  Assert.assertEquals(val,"OPD Patient");
 	  
 	  }
 	  
@@ -458,11 +458,11 @@ public class openMrsStep {
 	  public void patient_must_be_deleted_successfully() {
 		  we = driver.findElement(By.id("patient-search"));
 		  we.sendKeys("anonym");
-		  new WebDriverWait(driver, Duration.ofSeconds(7)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='dataTables_empty']/tbody/tr/td")));
+		 new WebDriverWait(driver, Duration.ofSeconds(7)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//*[@id='patient-search-results-table']/tbody/tr/td"),"No matching records found"));
 			
-		  we2=driver.findElement(By.xpath("//*[@class='dataTables_empty']/tbody/tr/td"));
+		  /*we2=driver.findElement(By.xpath("//*[@class='dataTables_empty']/tbody/tr/td"));
 		  val=we2.getText();
-		  Assert.assertEquals("No matching records found", val);
+		  Assert.assertEquals(val,"No matching records found");*/
 	  
 	  }
 	  
@@ -481,7 +481,7 @@ public class openMrsStep {
 	  @Then("I should be logged out of the application successfully") 
 	  public void i_should_be_logged_out_of_the_application_successfully() {
 		pageTitle = driver.getTitle();
-		Assert.assertEquals("Logout Successful","Login", pageTitle);
+		Assert.assertEquals(pageTitle, "Login", "Logout Successful" );
 	  
 	  }
 	 

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="14" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="104574" started-at="2022-09-10T16:39:00 IST" finished-at="2022-09-10T16:40:44 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="104574" started-at="2022-09-10T16:39:00 IST" finished-at="2022-09-10T16:40:44 IST">
+      <class name="runner.JRunnerTest">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="setUpClass" is-config="true" duration-ms="35207" started-at="2022-09-10T16:39:00 IST" finished-at="2022-09-10T16:39:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2af4129d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="8758" started-at="2022-09-10T16:39:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:39:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="24095" started-at="2022-09-10T16:39:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register Patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="427" started-at="2022-09-10T16:40:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Provide Demographics of the patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="241" started-at="2022-09-10T16:40:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Provide Gender of the Patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="1174" started-at="2022-09-10T16:40:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Provide Birthdate of the Patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="1402" started-at="2022-09-10T16:40:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Provide address of the patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="539" started-at="2022-09-10T16:40:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Provide Phone number of the patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="10496" started-at="2022-09-10T16:40:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Provide Relatives info"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="3743" started-at="2022-09-10T16:40:22 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Find Patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="371" started-at="2022-09-10T16:40:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View Patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [M] but found [F]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [M] but found [F]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepDef.openMrsStep.patients_record_should_be_displayed_with_correct_info(openMrsStep.java:330)
+at ✽.Patients record should be displayed with correct info(classpath:Feature//openMRS.feature:89)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="5126" started-at="2022-09-10T16:40:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add an attachment to the patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"span[class='PersonName-givenName']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ef5ce38a54e254c07a4756e8e3a960, findElement {using=css selector, value=span[class='PersonName-givenName']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2655/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ef5ce38a54e254c07a4756e8e3a960]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"span[class='PersonName-givenName']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ef5ce38a54e254c07a4756e8e3a960, findElement {using=css selector, value=span[class='PersonName-givenName']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2655/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ef5ce38a54e254c07a4756e8e3a960
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at stepDef.openMrsStep.i_am_on_patients_dashboard_page(openMrsStep.java:355)
+at ✽.I am on Patients Dashboard Page(classpath:Feature//openMRS.feature:100)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="5044" started-at="2022-09-10T16:40:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add the attachment"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='breadcrumbs']/li[3]"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ef5ce38a54e254c07a4756e8e3a960, findElement {using=xpath, value=//*[@id='breadcrumbs']/li[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2655/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ef5ce38a54e254c07a4756e8e3a960]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='breadcrumbs']/li[3]"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ef5ce38a54e254c07a4756e8e3a960, findElement {using=xpath, value=//*[@id='breadcrumbs']/li[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2655/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ef5ce38a54e254c07a4756e8e3a960
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at stepDef.openMrsStep.i_am_on_attachments_page(openMrsStep.java:401)
+at ✽.I am on Attachments Page(classpath:Feature//openMRS.feature:106)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="5073" started-at="2022-09-10T16:40:36 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete a Patient"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"a[href^='/openmrs/coreapps/clinicianfacing/patient.page?patientId=']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ef5ce38a54e254c07a4756e8e3a960, findElement {using=css selector, value=a[href^='/openmrs/coreapps/clinicianfacing/patient.page?patientId=']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2655/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ef5ce38a54e254c07a4756e8e3a960]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href^='/openmrs/coreapps/clinicianfacing/patient.page?patientId=']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DVCINH6099148', ip: '192.168.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ef5ce38a54e254c07a4756e8e3a960, findElement {using=css selector, value=a[href^='/openmrs/coreapps/clinicianfacing/patient.page?patientId=']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\soumyb\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2655/devtool..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ef5ce38a54e254c07a4756e8e3a960
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at stepDef.openMrsStep.i_am_on_patients_dashboard_screen(openMrsStep.java:436)
+at ✽.I am on Patients Dashboard Screen(classpath:Feature//openMRS.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JRunnerTest@42607a4f]" name="runScenario" duration-ms="1588" started-at="2022-09-10T16:40:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-10T16:40:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout of the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Scenarios for open MRS application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.JRunnerTest@42607a4f]" name="tearDownClass" is-config="true" duration-ms="1153" started-at="2022-09-10T16:40:43 IST" finished-at="2022-09-10T16:40:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.JRunnerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

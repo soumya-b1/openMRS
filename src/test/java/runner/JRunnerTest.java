@@ -1,16 +1,13 @@
-package junitRunner;
+package runner;
 
-import org.junit.runner.RunWith;
-
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
 
-@RunWith(Cucumber.class)
 @CucumberOptions
-(         features="classpath:Feature/", // pick from src/test/resources
+(       features="classpath:Feature/", // pick from src/test/resources
         glue="stepDef", //pick from src/test/java
-        tags="",
+        tags="not @Appointment ",
         plugin = {"pretty",  // produce verbose report  
                 "html:target/cucumber-report/report.html", //generate HTML here
                 "json:target/cucumber-report/cucumber.json", //to be post processed by user/other tools
@@ -20,6 +17,6 @@ import io.cucumber.junit.CucumberOptions;
         dryRun=false //execute the stepdef file, if true it will just map the feature file to step def file
         )
 
-public class JRunnerTest {
+public class JRunnerTest extends AbstractTestNGCucumberTests{
 	
 }

@@ -1,2 +1,2 @@
 stepDef\openMrsStep.class
-junitRunner\JRunnerTest.class
+runner\JRunnerTest.class
